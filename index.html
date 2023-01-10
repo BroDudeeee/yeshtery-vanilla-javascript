@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yeshtery</title>
+  </head>
+  <body>
+    <div class="whole-container">
+      <header>
+        <nav class="top-header">
+          <img
+            src="https://www.yeshtery.com/files/69/brand-logo-yellow.svg"
+            alt="logo"
+            loading="lazy"
+            class="logo"
+          />
+          <div class="search-container">
+            <i class="fas fa-search fa-2x"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <nav class="top-header-icons">
+            <div>
+              <i class="fas fa-2x fa-search"></i>
+            </div>
+            <div class="cart-container">
+              <p class="number-cart">0</p>
+              <i class="fa-solid fa-2x fa-cart-shopping"></i>
+              <span class="icon-title">Cart</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-2x fa-heart"></i>
+              <span class="icon-title">Wishlist</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-2x fa-user"></i>
+              <span class="icon-title">Login</span>
+            </div>
+          </nav>
+        </nav>
+        <nav class="bottom-header">
+          <ul>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Kids</li>
+            <li>Sports & fitness</li>
+            <li>Electronics</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="product-container">
+          <section class="img-container">
+            <img
+              src="images/yeshtery1.jpg"
+              class="main-img"
+              alt=""
+              loading="lazy"
+            />
+
+            <div class="preview-container">
+              <i class="fa-solid fa-3x fa-chevron-left changeBtn prevBtn"></i>
+              <img class="small-img" src="images/yeshtery1.jpg" alt="person" />
+              <i class="fa-solid fa-3x fa-chevron-right changeBtn prevBtn"></i>
+            </div>
+          </section>
+          <section class="product-details">
+            <p class="product-title">
+              Reebok Workout Ready Graphic T-Shirt For Men
+            </p>
+            <div class="stars-container">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p class="price">473</p>
+            <div class="color">
+              <label for="product-color">Color:</label>
+              <span id="product-color">Red</span>
+            </div>
+            <div class="size">
+              <label for="product-size">Size:</label>
+              <span id="product-size">2XL</span>
+            </div>
+            <div class="quantity">
+              <i class="fa-solid fa-plus count-btn increase"></i>
+              <p id="count">0</p>
+              <i class="fa-solid fa-minus count-btn decrease"></i>
+            </div>
+            <div>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <div class="for-shadow"></div>
+    <aside>
+      <div class="x-icon-container">
+        <p>My Cart</p>
+        <i class="fa-solid fa-x fa-2x"></i>
+      </div>
+      <section class="bought-product no-item">
+        <p>Cart Summary</p>
+        <div class="cart-product">
+          <img src="images/yeshtery1.jpg" alt="" class="cart-img" />
+          <div class="product">
+            <p>Reebok Workout Ready Graphic T-Shirt For Men</p>
+            <div class="color">
+              <label for="product-color">Color:</label>
+              <span id="product-color">Red</span>
+            </div>
+            <div class="size">
+              <label for="product-size">Size:</label>
+              <span id="product-size">2XL</span>
+            </div>
+            <div class="quant">
+              <label for="product-quant">Quantity:</label>
+              <span id="product-quant">0</span>
+            </div>
+          </div>
+        </div>
+        <p class="cart-total">0</p>
+      </section>
+      <section class="empty">
+        <p>No Products in here yet</p>
+      </section>
+    </aside>
+
+    <script src="index.js"></script>
+  </body>
+</html>
